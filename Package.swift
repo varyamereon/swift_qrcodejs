@@ -5,6 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "swift_qrcodejs",
+    platforms: [
+        .macOS(.v10_15),
+        .iOS(.v13),
+        .tvOS(.v13),
+        .watchOS(.v9)
+    ],
     products: [
         .library(
             name: "QRCodeSwift",
